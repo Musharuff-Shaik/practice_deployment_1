@@ -2,7 +2,7 @@ import express from "express";
 import { dbConnection } from "./database/dbConnection.js";
 import { config } from "dotenv";
 import cookieParser from "cookie-parser";
-const cors = require("cors");
+import cors from "cors";
 import fileUpload from "express-fileupload";
 import { errorMiddleware } from "./middlewares/error.js";
 import messageRouter from "./router/messageRouter.js";

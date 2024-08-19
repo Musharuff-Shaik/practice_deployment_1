@@ -15,10 +15,10 @@ config({ path: "./config.env" });
 app.use(
   cors({
     origin: [
-      // process.env.FRONTEND_URL_ONE, 
-      // process.env.FRONTEND_URL_TWO,
-       'http://localhost:5173',
-       'http://localhost:5174',
+      process.env.FRONTEND_URL_ONE, 
+      process.env.FRONTEND_URL_TWO,
+       // 'http://localhost:5173',
+       // 'http://localhost:5174',
       // 'https://xyz-mocha-one.vercel.app'
     ],
     method: ["GET", "POST", "DELETE", "PUT"],
